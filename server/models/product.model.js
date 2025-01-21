@@ -1,0 +1,20 @@
+import mongoose from "mongoose";
+
+const ProductSchema = new mongoose.Schema({
+  image: {
+    type: String,
+    default: "data:image/png;base64,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",
+  },
+  email: { type: String, required: true },
+  password: { type: String, required: true },
+  gender: { type: String, required: true },
+  age: { type: Number, required: true },
+  language: { type: Array, required: true },
+  hobbies: { type: Array, required: true },
+  date: { type: String, required: true },
+  userId: { type: Number, required: true, default: 1 },
+});
+
+const ProductModel = mongoose.model("UserDetails", ProductSchema);
+
+export default ProductModel;
