@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://crud-g2k4.onrender.com",
     credentials: true, // If you are using cookies
   })
 );
