@@ -88,7 +88,7 @@ const SignIn = async (req, res) => {
               })
               .status(200)
               .json({
-                message: "Token generated",
+                message: "Login Successfully !",
                 UserData: isUser,
                 success: true,
               });
